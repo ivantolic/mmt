@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="naslovnica.css">
+ 
 </head>
 <body>
 <header>
@@ -20,14 +21,14 @@
   <div id="content">
     <div id="firstcolumn">
         <div class="slike1">
-            <img src="/images/slikaa.jpg" alt="slikaa" class="slikaa">
-            <img src="/images/brod.bmp" alt="brod" class="brod">  
+            <img src="/images/slikaa.jpg" alt="slikaa" class="slikaa" onclick="openFullscreen(this)">
+            <img src="/images/brod.bmp" alt="brod" class="brod" onclick="openFullscreen(this)">  
         </div>
         <br>
         <br>
         <div class="slike2">
-          <img src="/images/rm.png" alt="rm" class="football">
-          <img src="/images/gamesgif.gif" alt="games" class="games">  
+          <img src="/images/rm.png" alt="rm" class="football" onclick="openFullscreen(this)">
+          <img src="/images/gamesgif.gif" alt="games" class="games" onclick="openFullscreen(this)">  
       </div>
       <br>
       <br>
@@ -125,6 +126,24 @@
   </div>
 <br>
 <br>
+
+
+<div id="fullscreen"></div>
+
+<script>
+  // Funkcija za otvaranje povećane slike u punom ekranu
+  function openFullscreen(imgElement) {
+    var fullscreen = document.getElementById("fullscreen");
+    var newImg = document.createElement("img");
+    newImg.src = imgElement.src;
+    newImg.onclick = function() {
+      fullscreen.style.display = "none";
+    };
+    fullscreen.innerHTML = "";
+    fullscreen.appendChild(newImg);
+    fullscreen.style.display = "block";
+  }
+</script>
 
   
 </body>
