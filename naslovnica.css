@@ -1,0 +1,103 @@
+body{
+    background-color: #6E6E6E;
+}
+.slike1{
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.slikaa{
+    width: 210px;
+    height: 290px;
+    display: inline-block;
+    margin-right: 13px;
+}
+
+.brod{
+    width: 450px;
+    height:290px;
+    display:block;
+    margin: 0;
+
+}
+
+.games{
+    width: 330px;
+    height: 240px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.football{
+    width: 330px;
+    height: 240px;
+}
+
+.name{
+    font-size: 44px;
+}
+
+.upper{
+    background-color: #383838;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: block;
+}
+
+.ferit{
+    font-size: 18px;
+    color: #4f72b8;
+    text-decoration: none;
+}
+
+.ferit:hover{
+    color:rgb(216, 207, 231)
+}
+
+#content{
+    margin-top: 270px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: white;
+}
+.title{
+    font-size: 28px;
+}
+
+.tekst{
+    display: inline-block; 
+    margin: 0; 
+    padding: 0;
+    font-size: 20px;
+}
+
+.link{
+    color: rgb(130, 141, 197);
+    text-decoration: none;
+}
+
+.link:hover{
+    color: #e3e3e3;
+}
+
+.aud{
+    margin-left: 20px;
+}
+
+
+.linkfr{
+    text-decoration: none;
+}
+
+hr {  
+    height: 4px;  
+    background-color: #383838;  
+    border: none;  
+}  
